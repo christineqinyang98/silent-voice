@@ -1,0 +1,14 @@
+## intent:number_participants
+- there are [five](number)
+- there are [five](number) members
+- there are [5](number) members
+- there are five, wait, [six](number) members
+- 6 actually [4](number) members
+- there are [seven](number) people attending
+- just [2](number) today
+- currently[3](number)
+- we have [12](number)
+- we have [ten](number) here
+- [7](number)
+- [8](number) people
+- in total, [ten](number)

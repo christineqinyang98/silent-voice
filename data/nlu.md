@@ -28,6 +28,7 @@
 ## intent:affirm
 - yes
 - ya
+- okay
 - indeed
 - of course
 - for sure
@@ -56,21 +57,6 @@
 - I disagree
 - That’s not right
 - that’s not true
-
-## intent:number_participants
-- there are [five](number)
-- there are [five](number) members
-- there are [5](number) members
-- there are five, wait, [six](number) members
-- 6 actually [4](number) members
-- there are [seven](number) people attending
-- just [2](number) today
-- currently[3](number)
-- we have [12](number)
-- we have [ten](number) here
-- [7](number)
-- [8](number) people
-- in total, [ten](number)
 
 ## intent:mood_great
 - perfect
@@ -115,3 +101,28 @@
 - what do you mean
 - I am confused
 - I don’t have an answer for that
+
+## intent:number
+- we have 8
+- 12 participants
+- 5 people
+- 1 member
+- we have 3 
+- 4 people
+- 3 members of the team
+- 5 persons
+
+## intent:affirm_topic
+- Christine and Docker
+- Christine and Mycroft
+
+## intent:deny_topic
+- no more topics
+- none topics
+
+## intent:majority
+- majority
+
+## intent:minority
+- minority
+

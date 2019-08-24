@@ -1,83 +1,67 @@
 intents:
-  - greet
-  - number
-  - goodbye
-  - affirm
-  - affirm_topic
-  - majority
-  - minority
-  - deny
-  - number_participants
-  - mood_great
-  - mood_unhappy
-  - mood_uncertain
-
+- greet
+- goodbye
+- number_participants
+- affirm
+- affirm_topic
+- deny_topic
+- majority
+- minority
+- deny
+- number
+- mood_great
+- mood_unhappy
+- mood_uncertain
+- mood_unsure
+entities:
+- TOPIC
+- PERSON
+- CARDINAL
+slots:
+  participants:
+    type: text
+templates:
+  utter_greet:
+  - text: welcome to lean coffee, how many of you are participating in today's meeting?
+  utter_response:
+  - text: Oh, that's nice. Are you ready to start proposing topics?
+  utter_first_topic:
+  - text: Cool! Let's get started! Who wants to propose first?
+      Please also state your name.
+  utter_elaborate:
+  - text: Would you like to elaborate on your topic to get more votes?
+  utter_second_topic:
+  - text: got it, do you have another one, {PERSON}
+  utter_next_person:
+  - text: next person please state your topic and your name
+  utter_start_vote:
+  - text: Okay are you ready to start voting then?
+  utter_vote:
+  - text: how many of you would like to vote for Christine's discussion about Dockers?
+  utter_discuss:
+  - text: That was fun! based on the votes, Christine you have the next 5 minutes to
+      discuss about Dockers
+  utter_continue:
+  - text: how many of you would like to continue this discussion?
+  utter_majority:
+  - text: wow, the majority of you would like to continue, let's give it another 5
+      minutes!
+  utter_end:
+  - text: that's the one hour meeting, thank you for coming!
+  utter_funny:
+  - text: See you later alligator!
 actions:
 - utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
-- utter_response1
+- utter_response
 - utter_first_topic
-- utter_topic
 - utter_elaborate
-- timer_30s
 - utter_second_topic
 - utter_next_person
+- utter_start_vote
 - utter_vote
 - utter_discuss
 - utter_continue
 - utter_majority
-- timer_5min
-- utter_continue
-- utter_discuss
+- utter_funny
 - utter_end
-- funny_goodbye
-
-templates:
-  utter_greet:
-  - text: "welcome to lean coffee, how many of you are participating in today's meeting?"
-
-  utter_response1:
-  - text: "Oh, that's nice. Are you ready to start proposing topics?"
-
-  utter_first_topic:
-  - text: "cool! Let's get started! Who wants to propose first? please also state your name."
-
-  utter_elaborate:
-  - text: "would you like to elaborate your topic to get more votes?"
-
-  utter_second_topic:
-  - text: "got it, do you have another one, { name }"
-
-  utter_next_person:
-  - text: "next person please state your topic and your name"
-
-  utter_vote:
-  - text: "how many of you would like to vote for [name]'s [topic]?"
-
-  utter_discuss:
-  - text: "That was fun! based on the votes, [name] you have the next 5 minutes to discuss about [topic]"
-
-  utter_continue:
-  - text: "how many of you would like to continue this discussion?"
-
-  utter_majority:
-  - text: "wow, the majority of you would like to continue, let's give it another 5 minutes!"
-
-  utter_end:
-  - text: "that's one hour meeting, thank you for coming!"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
+- action_set_part
