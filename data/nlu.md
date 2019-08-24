@@ -3,21 +3,27 @@
 - hello
 - hi
 - good morning
+- good afternoon
 - good evening
 - hey there
+- hola
 
 ## intent:goodbye
 - bye
 - goodbye
 - see you around
 - see you later
+- cheers
 
 ## intent:affirm
 - yes
+- ya
 - indeed
 - of course
+- for sure
 - that sounds good
 - correct
+- for sure
 
 ## intent:deny
 - no
@@ -26,6 +32,9 @@
 - don't like that
 - no way
 - not really
+
+## intent:number
+
 
 ## intent:mood_great
 - perfect
@@ -48,3 +57,12 @@
 - not very good
 - extremely sad
 - so sad
+
+## intent:mood_unsure
+- I don't know
+- I do not know
+- I'm not sure
+- I guess
+- I suppose
+- Um
+- Hm

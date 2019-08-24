@@ -1,8 +1,18 @@
 ## happy path
 * greet
   - utter_greet
-* mood_great
-  - utter_happy
+* number
+  - utter_response1
+* affirm
+  - utter_first_topic
+
+## topic path
+* topic
+  - utter_elaborate
+* affirm
+  - timer_30s
+  - utter_
+
 
 ## sad path 1
 * greet

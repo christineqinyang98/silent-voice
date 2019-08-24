@@ -15,7 +15,10 @@ actions:
 
 templates:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "welcome to lean coffee, how many of you are participating in today's meeting?"
+
+  utter_response1:
+  - text: "Oh, that's nice. Are you ready to start proposing topics?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
