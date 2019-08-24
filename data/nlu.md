@@ -7,6 +7,11 @@
 - good evening
 - hey there
 - hola
+- how are you
+- nice to meet you
+- how you doing
+- how is it going
+- how have you been
 
 ## intent:goodbye
 - bye
@@ -14,6 +19,11 @@
 - see you around
 - see you later
 - cheers
+- see you
+- so long
+- have a good one
+- have a good day
+- farewell
 
 ## intent:affirm
 - yes
@@ -23,7 +33,18 @@
 - for sure
 - that sounds good
 - correct
-- for sure
+- right
+- sure
+- sounds great
+- that works
+- you are right
+- exactly
+- absolutely
+- definitely
+- Got it
+- that’s true
+- true
+- facts
 
 ## intent:deny
 - no
@@ -32,9 +53,24 @@
 - don't like that
 - no way
 - not really
+- I disagree
+- That’s not right
+- that’s not true
 
-## intent:number
-
+## intent:number_participants
+- there are [five](number)
+- there are [five](number) members
+- there are [5](number) members
+- there are five, wait, [six](number) members
+- 6 actually [4](number) members
+- there are [seven](number) people attending
+- just [2](number) today
+- currently[3](number)
+- we have [12](number)
+- we have [ten](number) here
+- [7](number)
+- [8](number) people
+- in total, [ten](number)
 
 ## intent:mood_great
 - perfect
@@ -45,6 +81,13 @@
 - I am feeling very good
 - I am great
 - I'm good
+- fantastic
+- awesome
+- terrific
+- fabulous
+- that’s sick
+- good job
+- well done
 
 ## intent:mood_unhappy
 - sad
@@ -66,3 +109,9 @@
 - I suppose
 - Um
 - Hm
+- I don’t understand
+- I have no idea
+- I have no clue
+- what do you mean
+- I am confused
+- I don’t have an answer for that

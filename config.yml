@@ -1,7 +1,17 @@
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
 language: en
-pipeline: supervised_embeddings
+pipeline:
+  - name: "WhitespaceTokenizer"
+  - name: "RegexFeaturizer"
+  - name: "DucklingHTTPExtractor"
+    url: "http://0.0.0.0:8000"
+    dimensions: ["numeral", "duration"]
+    locale: "de_DE"
+    timezone: "US/Eastern"
+  - name: "EntitySynonymMapper"
+  - name: "CountVectorsFeaturizer"
+  - name: "EmbeddingIntentClassifier"
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
