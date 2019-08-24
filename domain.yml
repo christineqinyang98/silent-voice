@@ -1,7 +1,11 @@
 intents:
   - greet
+  - number
   - goodbye
   - affirm
+  - affirm_topic
+  - majority
+  - minority
   - deny
   - number_participants
   - mood_great
@@ -14,6 +18,22 @@ actions:
 - utter_did_that_help
 - utter_happy
 - utter_goodbye
+- utter_response1
+- utter_first_topic
+- utter_topic
+- utter_elaborate
+- timer_30s
+- utter_second_topic
+- utter_next_person
+- utter_vote
+- utter_discuss
+- utter_continue
+- utter_majority
+- timer_5min
+- utter_continue
+- utter_discuss
+- utter_end
+- funny_goodbye
 
 templates:
   utter_greet:
@@ -21,6 +41,33 @@ templates:
 
   utter_response1:
   - text: "Oh, that's nice. Are you ready to start proposing topics?"
+
+  utter_first_topic:
+  - text: "cool! Let's get started! Who wants to propose first? please also state your name."
+
+  utter_elaborate:
+  - text: "would you like to elaborate your topic to get more votes?"
+
+  utter_second_topic:
+  - text: "got it, do you have another one, { name }"
+
+  utter_next_person:
+  - text: "next person please state your topic and your name"
+
+  utter_vote:
+  - text: "how many of you would like to vote for [name]'s [topic]?"
+
+  utter_discuss:
+  - text: "That was fun! based on the votes, [name] you have the next 5 minutes to discuss about [topic]"
+
+  utter_continue:
+  - text: "how many of you would like to continue this discussion?"
+
+  utter_majority:
+  - text: "wow, the majority of you would like to continue, let's give it another 5 minutes!"
+
+  utter_end:
+  - text: "that's one hour meeting, thank you for coming!"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
