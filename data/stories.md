@@ -53,7 +53,7 @@
 ## vote 2 deny path
 > check_vote_2
 * minority
-  - utter_discuss
+  - utter_discuss_next
 > check_discuss
   
 ## discuss deny path

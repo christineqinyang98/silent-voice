@@ -114,7 +114,7 @@
 
 ## intent:affirm_topic
 - Christine and Docker
-- Christine and Mycroft
+- Susan and Mycroft
 
 ## intent:deny_topic
 - no more topics

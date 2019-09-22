@@ -26,12 +26,12 @@ templates:
   utter_response:
   - text: Oh, that's nice. Are you ready to start proposing topics?
   utter_first_topic:
-  - text: Cool! Let's get started! Who wants to propose first?
-      Please also state your name.
+  - text: Cool! Let's get started! Who wants to propose first? Please also state your
+      name.
   utter_elaborate:
   - text: Would you like to elaborate on your topic to get more votes?
   utter_second_topic:
-  - text: got it, do you have another one, {PERSON}
+  - text: got it, do you have another topic to discuss?
   utter_next_person:
   - text: next person please state your topic and your name
   utter_start_vote:
@@ -39,10 +39,12 @@ templates:
   utter_vote:
   - text: how many of you would like to vote for Christine's discussion about Dockers?
   utter_discuss:
-  - text: That was fun! based on the votes, Christine you have the next 5 minutes to
-      discuss about Dockers
+  - text: That was fun! based on the votes, Christine you have the next 5 minutes
+      to discuss about Dockers
+  utter_discuss_next:
+  - text: Okay since that's the minority, let's move on to the next topic.
   utter_continue:
-  - text: how many of you would like to continue this discussion?
+  - text: 5 minutes are up! How many of you would like to continue this discussion?
   utter_majority:
   - text: wow, the majority of you would like to continue, let's give it another 5
       minutes!
@@ -65,3 +67,4 @@ actions:
 - utter_funny
 - utter_end
 - action_set_part
+- utter_discuss_next
